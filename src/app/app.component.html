@@ -1,22 +1,26 @@
-<div class="heading">
-  <h1 >HELLO WORLD</h1>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="app.component.css">
+<title>Card</title>
+
+<div class="wrapper">
+  <div class="container" data-card="1">
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">HAX PSU</h2>
+        <img src="https://hax.camp/assets/haxBanner-01.png" alt="Card Image">
+        <div class="description-toggle">
+          <div class="description">Hax Camp 2022</div>
+          <div class="toggle-button">Toggle Description</div>
+        </div>
+        <a class="details-link" href="https://hax.psu.edu">Details</a>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="buttons">
-  <button class="duplicate">Duplicate  card</button>
-  <button class="changetxt">Change title</button>
-  <button id="deletecard">Delete</button>
-  <button data-toggle-btn>Toggle details</button>
-    <button id="changebackground">Change Background</button>
-  </div>
-  
-  <div id= "card" class="card">
-    <img src="https://media.istockphoto.com/id/1072291024/vector/vector-illustration-cartoon-residential-townhouse.jpg?s=612x612&w=0&k=20&c=vhYukmGJvZYdabADEakKi8W2-V47XzZ_fUW-3RRmPjE=" width="100"
-         height="100"/>
-      <h3 >Real Estate Agency</h3>
-      <h4>IST 256 Pod 2</h4>
-    <details class="details">
-      <summary>Open me</summary>
-      <div>
-        The best agency around! Give us a call!
-      </div>
+<button class="duplicateButton">Duplicate Card</button>
+<button class="toggleColorButton">Toggle Color</button>
+<button class="changeTitleButton">Change Title</button>
+<button class="deleteCardButton">Delete Last Card</button>
+<script src="app.component.js"></script>

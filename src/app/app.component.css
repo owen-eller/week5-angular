@@ -1,59 +1,81 @@
-.card {
-    width: 400px;
-    margin: 0 auto;
-    border: 1px solid;
-    padding: 10px;
-    text-align: center;
-}
-.details {
-  margin: 10 px;
-  padding: 10px;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
 }
 
-.details summary{
-  font-size: 12px;
+.wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
-.buttons {
+.container {
+  max-width: 400px;
+  border: 4px solid navy;
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px;
+  background-color: white;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-content {
+  margin-top: 0;
+  text-align: center;
+}
+
+.card-title {
+  margin: 16px;
+  text-align: center;
+}
+
+.description {
+  margin: 4px;
+}
+
+.description-toggle {
+  cursor: pointer;
+}
+
+.toggle-button {
   display: block;
+  text-align: center;
+  padding: 8px;
+  border: 4px solid black;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: black;
+  background-color: lightblue;
+}
+.details-link {
+  display: none;
+  margin-top: 16px;
+  text-align: center;
 }
 
-.buttons button:focus, 
-.buttons button:hover {
-  background-color: pink;
+.bg-toggle {
+  background-color: darkgray;
 }
 
-.buttons button:active {
-  bakground-color: blue;
+.toggle-button:hover,
+.toggle-button:focus {
+  background-color: lightgray;
+  color: black;
 }
 
-.button[data-toggle-btn] {
-  padding: 10px;
-  font-size: 15px;
-  display: block;
+.hidden {
+  display: none;
 }
-
-@media only screen and (max-width: 1200px){
-  .wrapper {
-    background-color: pink;
-  }
-}
-@media only screen and (max-width: 600px){
-  .wrapper {
-    background-color: purple;
-  }
-}
-@media only screen and (max-width: 425px){
-  .wrapper {
-    font-weight: normal;
-  }
-  .wrapper .header h3 {
-    font-size: 12px;
-  }
-  .wrapper .header h4 {
-    font-size: 10px !important;
-  }
-  details {
+@media (max-width: 800px) {
+  .button-details {
     display: none;
   }
 }
